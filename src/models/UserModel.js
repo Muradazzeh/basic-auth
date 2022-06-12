@@ -4,6 +4,7 @@ const Users =(sequelize,DataTypes)=>
     username: {
       type: DataTypes.STRING,
       allowNull: false,
+      UNIQUE:true,
     },
     password: {
       type: DataTypes.STRING,
