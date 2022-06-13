@@ -20,14 +20,14 @@ describe("This is the jest test for the srever", ()=>{
      })
      test("Testing the SignUp method.パスワードを正しく作成された ", async ()=>{
         const response=await mockRequest.post("/signup").send({
-            username:"MURAD ALAZZEH",
-            password:"123@as"
+            username:"MURAD ALAZZEH1",
+            password:"123@as1"
         })
         expect(response.status).toEqual(201)
         expect(response.body.username).toBeTruthy()
     })
     test('testing the sign in post method ', async () => {
-        const response = await mockRequest.post('/signin').auth('MURAD ALAZZEH','123@as');
+        const response = await mockRequest.post('/signin').auth('MURAD ALAZZEH1','123@as1');
         expect(response.status).toBe(200);
     });
 
