@@ -26,10 +26,10 @@ describe("This is the jest test for the srever", ()=>{
         expect(response.status).toEqual(201)
         expect(response.body.username).toBeTruthy()
     })
-    // test('testing the sign in post method ', async () => {
-    //     const response = await mockRequest.post('/signin').auth('MURAD ALAZZEH','123@as');
-    //     expect(response.status).toBe(200);
-    // });
+    test('testing the sign in post method ', async () => {
+        const response = await mockRequest.post('/signin').auth('MURAD ALAZZEH','123@as');
+        expect(response.status).toBe(200);
+    });
 
 });
 
