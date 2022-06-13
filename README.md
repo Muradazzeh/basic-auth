@@ -5,7 +5,7 @@
 * this is the link for heroku web site [ herokulink](https://murad-basic-auth.herokuapp.com/)
 * this is the link for main repo [ repo link ](https://github.com/Muradazzeh/basic-auth)
 
-## Intrduction 
+## Intrduction  . 
 * First we start with Singleton , what is Singleton : it is a software pattern that restricts the instantiation of a class to one "single" instance.
 * what is authentication and authorization :
     *  authentication: is the process of verifying who someone is.
