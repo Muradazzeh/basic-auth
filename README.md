@@ -63,3 +63,6 @@ and I set the dotenv variables for the 3 phases  so on each command these variab
 ![link](./src/image/Screenshot%20(225).png)
 ![link](./src/image/Screenshot%20(226).png)
 
+* Finally I add a sign up route in heroku to read all users and the hashed password to make sure that post working in our data base as shown below : 
+![link](./src/image/Screenshot%20(229).png)
+
