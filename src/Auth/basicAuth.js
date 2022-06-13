@@ -6,7 +6,7 @@ const { Users }  = require("../models/index");
 async function basicAuth(req, res, next) {
  
     if (req.headers.authorization) {
-        
+        console.log(req.headers.authorization)
         let basicHeaderParts = req.headers.authorization.split(" ");
 
         let encoded = basicHeaderParts[1];

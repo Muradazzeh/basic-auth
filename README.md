@@ -32,7 +32,7 @@ and I set the dotenv variables for the 3 phases  so on each command these variab
     * last when we deploy it to heroku the dot env variable will change to production so it will use main database , PostGres
 * We have the start up code on one page index.js , so the requirment is to do modulation , to do best practies and  to separate each routes and module as shown below : 
 ![link](./src/image/Screenshot%20(221).png) 
-* before start coding and prepaing I did UMl digram for the server , And I did sequence digrame for login and sign up as shown below :
+* before start coding and prepaing I did UML digram for the server , And I did sequence digrame for login and sign up as shown below :
 ![link](./src/image/uml%20(1).jpg)
 * and this is the sign up digram 
 ![link](./src/image/sign%20up.png)
@@ -44,6 +44,7 @@ and I set the dotenv variables for the 3 phases  so on each command these variab
 * the sequlize will do all the work , will connect to the data base and it will create the table depends on the modle that we have .
 * I created the user model , it is the schema for data base , .
 * I used Post method in the sign up routes to put data into database 
+* Also I add get method to the sign up route so I can check the user in my data base 
 * In the Log In route , we should do a middle ware function to do the logic for checking the user name and password  , and if it found the next() fuction will move to the main function as shown : 
  ![link](./src/image/Screenshot%20(222).jpg)
 
@@ -53,7 +54,8 @@ and I set the dotenv variables for the 3 phases  so on each command these variab
  ![link](./src/image/Screenshot%20(213).png)
  ![link](./src/image/Screenshot%20(214).png)
  ![link](./src/image/Screenshot%20(216).png)
- * now I prepared the Jest test for My server , I need to check 404 not found error and 500 server error , also I want to test home route , and I need to prepare tests for sing up route and log in route and middle ware as shown  
+ * now I prepared the Jest test for My server , I need to check 404 not found error and 500 server error , also I want to test home route , and I need to prepare tests for sing up route and log in route and middle ware as shown but , I didnt do the test for middle ware basicAuth 
+  ![link](./src/image/Screenshot%20(227).png)
 
  * Then I push the work to the github and I merge it to the main branch so I get this result from gitHub action 
  ![link](./src/image/Screenshot%20(223).png)
